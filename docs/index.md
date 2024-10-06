@@ -1,4 +1,4 @@
-# AI MicroApps Guide
+# About AI MicroApps
 
 AI Microapps are the simplest free way to build AI-powered web apps that you can personalize and share.
 
@@ -26,3 +26,19 @@ AI MicroApps have nearly limitless customization capabilities and work with the 
 Apps can be deployed to the web via Streamlit for free and nearly instantly.
 
 Check out <a href="https://ai-microapps.streamlit.app/" target="_blank" alt="Gallery of AI Microapps">The Gallery</a> to be inspired and see the configuration for any app. Happy Building!
+
+## Table of Contents
+
+
+- [Home](index.md)
+- [Quickstart](quickstart.md)
+- Building
+    - [Build from Github](build_online.md)
+    - [Build from Local](build_local.md)
+- [Deploy](deploy.md)
+- References
+    - [MicroApps](concept_phases_fields_runs.md)
+    - [Phases](reference_phases.md)
+    - [Fields](reference_fields.md)
+    - [Prompts](reference_prompts.md)
+

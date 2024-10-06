@@ -1,8 +1,6 @@
 site_name: "AI MicroApps Docs"
 
-repo_url: https://github.com/jswope00/AI-MicroApps
-
-copyright: "2024 Dime Consulting & Solutions, LLC"
+repo_url: https://github.com/jswope00/AI-MicroApps-Docs
 
 theme:
   name: "mkdocs"
