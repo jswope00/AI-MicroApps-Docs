@@ -1,0 +1,38 @@
+site_name: "AI MicroApps Docs"
+
+repo_url: https://github.com/jswope00/AI-MicroApps
+
+copyright: "2024 Dime Consulting & Solutions, LLC"
+
+theme:
+  name: "mkdocs"
+  features:
+    - navigation.tabs  # Ensures navigation tabs appear
+    - navigation.sections  # Adds a second-level section navigation in the sidebar
+    - navigation.instant
+  palette:
+    primary: "purple"
+    accent: "cyan"
+  # Enable the right sidebar for page-level navigation (table of contents)
+  navigation:
+    - site: true  # Left navigation for the entire site
+    - toc: true   # Right navigation for page-level content (Table of Contents)
+  logo: "images/logo.png"
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Building:
+    - Build from Github: build_online.md
+    - Build from Local: build_local.md
+  - Deploy: deploy.md
+  - References:
+      - MicroApps: concept_phases_fields_runs.md
+      - Phases: reference_phases.md
+      - Fields: reference_fields.md
+      - Prompts: reference_prompts.md
+
+markdown_extensions:
+  - toc:
+      permalink: true  # Adds permalinks to headers for better page navigation
+
