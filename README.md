@@ -8,4 +8,4 @@
   AI Microapps are the simplest free way to build AI-powered web apps that you can personalize and share. 
 </p>
 
-<p>The AI MicroApps repo lives at <a href="https://jswope00.github.io/AI-MicroApps/" alt="AI MicroApps" target="_blank">https://jswope00.github.io/AI-MicroApps/</a></p>
+<p>The AI MicroApps repo lives at <a href="https://github.com/jswope00/AI-MicroApps/" alt="AI MicroApps" target="_blank">https://github.com/jswope00/AI-MicroApps/</a></p>
