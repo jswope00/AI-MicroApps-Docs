@@ -1,24 +1,25 @@
 site_name: "AI MicroApps Docs"
 
-repo_name: jswope00/AI-MicroApps-Docs
-repo_url: https://github.com/jswope00/AI-MicroApps-Docs
-edit_uri: ./edit/main/docs
+site_url: https://github.com/jswope00/AI-MicroApps
+repo_name: jswope00/AI-MicroApps
+repo_url: https://github.com/jswope00/AI-MicroApps
 
 
 theme:
-  name: "mkdocs"
+  name: "material"
   features:
-    - navigation.tabs  # Ensures navigation tabs appear
+    # - navigation.tabs  # Ensures navigation tabs appear
     - navigation.sections  # Adds a second-level section navigation in the sidebar
     - navigation.instant
   palette:
-    primary: "purple"
-    accent: "cyan"
+    primary: custom
+    accent: custom
   # Enable the right sidebar for page-level navigation (table of contents)
   navigation:
     - site: true  # Left navigation for the entire site
     - toc: true   # Right navigation for page-level content (Table of Contents)
-  logo: "images/logo.png"
+  logo: img/logo_green_bg_sq.png
+  favicon: img/logo_transparent_bg_sq.png
 
 nav:
   - Home: index.md
@@ -32,6 +33,9 @@ nav:
       - Phases: reference_phases.md
       - Fields: reference_fields.md
       - Prompts: reference_prompts.md
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - toc:
