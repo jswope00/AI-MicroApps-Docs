@@ -1,0 +1,14 @@
+:root {
+  --md-primary-fg-color:        #215962;
+}
+
+
+.navbar.bg-primary {
+    background-image: none;
+}
+
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: #215962 !important;
+}
