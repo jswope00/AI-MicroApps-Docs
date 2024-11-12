@@ -137,6 +137,31 @@ For accessibility reasons, you should never set an empty label (label="") but hi
 </table>
 
 
+## chat_input
+
+The chat_input field is a chatbot like multi-turn input field where the user can have a conversation with the AI assistant. This field is especially useful in applications where ongoing dialogue is important, and/or the number of turns in the conversation is unknown.
+
+![chat input field](img/field_chat_input.png)
+
+**Parameters:**
+
+<table>
+
+  <tr>
+    <td>max_messages (int or None)</td>
+    <td>This optional parameter sets the maximum number of messages that can be sent and received in the conversation. In this case, a "message" is defined as a turn in the conversation with a user input and a response from the assistant. (So, "Hi Assistant", "Hi John", "Goodbye Assistant", "Goodbye John" would be 2 messages). If left unset, the default maximum is 50 messages. </td>
+  </tr>
+  <tr>
+    <td>initial_assistant_message (str)</td>
+    <td>This optional parameter specifies the initial message that the AI assistant will display to the user at the start of the conversation. This helps set the context for users when they first engage with the chat.</td>
+  </tr>
+  <tr>
+    <td>placeholder (str)</td>
+    <td>This optional parameter sets the placeholder text that will be displayed in the input field when the user has not yet sent a message. This helps guide users on what to input.</td>
+  </tr>
+</table>
+
+
 
 ## warning
 
