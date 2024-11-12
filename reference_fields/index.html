@@ -1,0 +1,1722 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/jswope00/AI-MicroApps/reference_fields/">
+      
+      
+        <link rel="prev" href="../reference_phases/">
+      
+      
+        <link rel="next" href="../reference_prompts/">
+      
+      
+      <link rel="icon" href="../img/logo_transparent_bg_sq.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Fields - AI MicroApps Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fields" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI MicroApps Docs" class="md-header__button md-logo" aria-label="AI MicroApps Docs" data-md-component="logo">
+      
+  <img src="../img/logo_green_bg_sq.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI MicroApps Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fields
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jswope00/AI-MicroApps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jswope00/AI-MicroApps
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI MicroApps Docs" class="md-nav__button md-logo" aria-label="AI MicroApps Docs" data-md-component="logo">
+      
+  <img src="../img/logo_green_bg_sq.png" alt="logo">
+
+    </a>
+    AI MicroApps Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jswope00/AI-MicroApps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jswope00/AI-MicroApps
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Building
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Building
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build_online/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build from Github
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build_local/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build from Local
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept_phases_fields_runs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MicroApps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_phases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Fields
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Fields
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text_input" class="md-nav__link">
+    <span class="md-ellipsis">
+      text_input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text_area" class="md-nav__link">
+    <span class="md-ellipsis">
+      text_area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat_input" class="md-nav__link">
+    <span class="md-ellipsis">
+      chat_input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      warning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#button" class="md-nav__link">
+    <span class="md-ellipsis">
+      button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      markdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      selectbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#number_input" class="md-nav__link">
+    <span class="md-ellipsis">
+      number_input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file_uploader" class="md-nav__link">
+    <span class="md-ellipsis">
+      file_uploader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numeric-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numeric Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-andor-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic (and/or) Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text_input" class="md-nav__link">
+    <span class="md-ellipsis">
+      text_input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text_area" class="md-nav__link">
+    <span class="md-ellipsis">
+      text_area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat_input" class="md-nav__link">
+    <span class="md-ellipsis">
+      chat_input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      warning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#button" class="md-nav__link">
+    <span class="md-ellipsis">
+      button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      markdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      selectbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#number_input" class="md-nav__link">
+    <span class="md-ellipsis">
+      number_input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file_uploader" class="md-nav__link">
+    <span class="md-ellipsis">
+      file_uploader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numeric-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numeric Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-andor-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic (and/or) Conditionals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h1>
+<p>These are the fields supported by MicroApps. They are a subset of fields that are supported by <a href="streamlit.io" target="_blank">Streamlit</a> and use much of the same syntax. </p>
+<div class="toc">
+<ul>
+<li><a href="#fields">Fields</a><ul>
+<li><a href="#text_input">text_input</a></li>
+<li><a href="#text_area">text_area</a></li>
+<li><a href="#chat_input">chat_input</a></li>
+<li><a href="#warning">warning</a></li>
+<li><a href="#button">button</a></li>
+<li><a href="#radio">Radio</a></li>
+<li><a href="#markdown">markdown</a></li>
+<li><a href="#selectbox">selectbox</a></li>
+<li><a href="#checkbox">checkbox</a></li>
+<li><a href="#slider">Slider</a></li>
+<li><a href="#number_input">number_input</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#file_uploader">file_uploader</a></li>
+<li><a href="#conditional-fields">Conditional Fields</a><ul>
+<li><a href="#boolean-conditionals">Boolean Conditionals</a></li>
+<li><a href="#numeric-conditionals">Numeric Conditionals</a></li>
+<li><a href="#string-conditionals">String Conditionals</a></li>
+<li><a href="#list-conditionals">List Conditionals</a></li>
+<li><a href="#logic-andor-conditionals">Logic (and/or) Conditionals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="text_input">text_input<a class="headerlink" href="#text_input" title="Permanent link">&para;</a></h2>
+<p>Display a single-line text input widget.</p>
+<p><img alt="text input field" src="../img/field_text_input.png" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+  <tr>
+   <td>type ("default" or "password")
+   </td>
+   <td>The type of the text input. This can be either "default" (for a regular text input), or "password" (for a text input that masks the user's typed value). Defaults to "default".
+   </td>
+  </tr>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this input is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>value (object or None)
+   </td>
+   <td>The text value of this widget when it first renders. This will be cast to str internally. If None, will initialize empty and return None until the user provides input. Defaults to empty string.
+   </td>
+  </tr>
+  <tr>
+   <td>max_chars (int or None)
+   </td>
+   <td>Max number of characters allowed in text input.
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed next to the input.
+   </td>
+  </tr>
+  <tr>
+   <td>placeholder (str or None) 
+<p>
+[keyword only]
+   </td>
+   <td>An optional string displayed when the text input is empty. If None, no text is displayed.
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+<p>
+[keyword only]
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it above the widget (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="text_area">text_area<a class="headerlink" href="#text_area" title="Permanent link">&para;</a></h2>
+<p>Display a multi-line text input widget.</p>
+<p><img alt="text area field" src="../img/field_text_area.png" title="image_tooltip" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this input is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>value (object or None)
+   </td>
+   <td>The text value of this widget when it first renders. This will be cast to str internally. If None, will initialize empty and return None until the user provides input. Defaults to empty string.
+   </td>
+  </tr>
+  <tr>
+   <td>height (int or None)
+   </td>
+   <td>Desired height of the UI element expressed in pixels. If None, a default height is used.
+   </td>
+  </tr>
+  <tr>
+   <td>max_chars (int or None)
+   </td>
+   <td>Maximum number of characters allowed in text area.
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed next to the textarea.
+   </td>
+  </tr>
+  <tr>
+   <td>placeholder (str or None)
+<p>
+[keyword only]
+   </td>
+   <td>An optional string displayed when the text area is empty. If None, no text is displayed.
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+<p>
+[keyword only]
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it above the widget (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="chat_input">chat_input<a class="headerlink" href="#chat_input" title="Permanent link">&para;</a></h2>
+<p>The chat_input field is a chatbot like multi-turn input field where the user can have a conversation with the AI assistant. This field is especially useful in applications where ongoing dialogue is important, and/or the number of turns in the conversation is unknown.</p>
+<p><img alt="chat input field" src="../img/field_chat_input.png" /></p>
+<p><strong>Parameters:</strong></p>
+<table>
+
+  <tr>
+    <td>max_messages (int or None)</td>
+    <td>This optional parameter sets the maximum number of messages that can be sent and received in the conversation. In this case, a "message" is defined as a turn in the conversation with a user input and a response from the assistant. (So, "Hi Assistant", "Hi John", "Goodbye Assistant", "Goodbye John" would be 2 messages). If left unset, the default maximum is 50 messages. </td>
+  </tr>
+  <tr>
+    <td>initial_assistant_message (str)</td>
+    <td>This optional parameter specifies the initial message that the AI assistant will display to the user at the start of the conversation. This helps set the context for users when they first engage with the chat.</td>
+  </tr>
+  <tr>
+    <td>placeholder (str)</td>
+    <td>This optional parameter sets the placeholder text that will be displayed in the input field when the user has not yet sent a message. This helps guide users on what to input.</td>
+  </tr>
+</table>
+
+<h2 id="warning">warning<a class="headerlink" href="#warning" title="Permanent link">&para;</a></h2>
+<p>Display warning message.</p>
+<table>
+  <tr>
+   <td>body (str)
+   </td>
+   <td>The warning text to display.
+   </td>
+  </tr>
+</table>
+
+<h2 id="button">button<a class="headerlink" href="#button" title="Permanent link">&para;</a></h2>
+<p>Display a button widget.</p>
+<p><img alt="alt_text" src="../img/field_button.png" /></p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this button is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed when the button is hovered over.
+   </td>
+  </tr>
+  <tr>
+   <td>on_click (callable)
+   </td>
+   <td>An optional callback invoked when this button is clicked.
+   </td>
+  </tr>
+  <tr>
+   <td>type ("secondary" or "primary")
+<p>
+[keyword only]
+   </td>
+   <td>An optional string that specifies the button type. Can be "primary" for a button with additional emphasis or "secondary" for a normal button. Defaults to "secondary".
+   </td>
+  </tr>
+</table>
+
+<h2 id="radio">Radio<a class="headerlink" href="#radio" title="Permanent link">&para;</a></h2>
+<p>Display a radio button widget.</p>
+<p><img alt="Radio Field" src="../img/field_radio.png" /></p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this radio group is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>options (Iterable)
+   </td>
+   <td>Labels for the select options in an Iterable. This can be a list, set, or anything supported by st.dataframe. If options is dataframe-like, the first column will be used. Each label will be cast to str internally by default.
+<p>
+Labels can include markdown as described in the label parameter and will be cast to str internally by default.
+   </td>
+  </tr>
+  <tr>
+   <td>index (int or None)
+   </td>
+   <td>The index of the preselected option on first render. If None, will initialize empty and return None until the user selects an option. Defaults to 0 (the first option).
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed next to the radio.
+   </td>
+  </tr>
+  <tr>
+   <td>horizontal (bool)
+<p>
+[keyword only]
+   </td>
+   <td>An optional boolean, which orients the radio group horizontally. The default is false (vertical buttons).
+   </td>
+  </tr>
+  <tr>
+   <td>captions (iterable of str or None)
+<p>
+[keyword only]
+   </td>
+   <td>A list of captions to show below each radio button. If None (default), no captions are shown.
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+<p>
+[keyword only]
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it above the widget (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="markdown">markdown<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
+<p>Display string formatted as Markdown.</p>
+<p><img alt="Markdown Field" src="../img/field_markdown.png" /></p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>body (str)
+   </td>
+   <td>The string to display as GitHub-flavored Markdown. Syntax information can be found at: <a href="https://github.github.com/gfm">https://github.github.com/gfm</a> 
+<p>
+This also supports:
+<ul>
+
+<li>Emoji shortcodes, such as :+1: and :sunglasses:. For a list of all supported codes, see <a href="https://share.streamlit.io/streamlit/emoji-shortcodes">https://share.streamlit.io/streamlit/emoji-shortcodes</a>. 
+
+<li>Google Material Symbols (rounded style), using the syntax :material/icon_name:, where "icon_name" is the name of the icon in snake case. For a complete list of icons, see Google's <a href="https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Rounded">Material Symbols</a> font library.
+
+<li>LaTeX expressions, by wrapping them in "$" or "$$" (the "$$" must be on their own lines). Supported LaTeX functions are listed at <a href="https://katex.org/docs/supported.html">https://katex.org/docs/supported.html</a>
+
+<li>Colored text and background colors for text, using the syntax :color[text to be colored] and :color-background[text to be colored], respectively. color must be replaced with any of the following supported colors: blue, green, orange, red, violet, gray/grey, rainbow. For example, you can use :orange[your text here] or :blue-background[your text here].
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>unsafe_allow_html (bool)
+   </td>
+   <td>Whether to render HTML within body. If this is False (default), any HTML tags found in body will be escaped and therefore treated as raw text. If this is True, any HTML expressions within body will be rendered.
+<p>
+Adding custom HTML to your app impacts safety, styling, and maintainability.
+<p>
+Note: If you only want to insert HTML or CSS without Markdown text, we recommend using st.html instead.
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+<p>
+[keyword only]
+   </td>
+   <td>An optional tooltip that gets displayed next to the Markdown.
+   </td>
+  </tr>
+</table>
+
+<h2 id="selectbox">selectbox<a class="headerlink" href="#selectbox" title="Permanent link">&para;</a></h2>
+<p>Display a select widget.</p>
+<p><img alt="Selectbox field" src="../img/field_selectbox.png" /></p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this select widget is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>options (Iterable)
+   </td>
+   <td>Labels for the select options in an Iterable. This can be a list, set, or anything supported by st.dataframe. If options is dataframe-like, the first column will be used. Each label will be cast to str internally by default.
+   </td>
+  </tr>
+  <tr>
+   <td>index (int)
+   </td>
+   <td>The index of the preselected option on first render. If None, will initialize empty and return None until the user selects an option. Defaults to 0 (the first option).
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed next to the selectbox.
+   </td>
+  </tr>
+  <tr>
+   <td>placeholder (str)
+<p>
+[keyword only]
+   </td>
+   <td>A string to display when no options are selected. Defaults to "Choose an option".
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+<p>
+[keyword only]
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it above the widget (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="checkbox">checkbox<a class="headerlink" href="#checkbox" title="Permanent link">&para;</a></h2>
+<p>Display a checkbox widget.</p>
+<p><img alt="Checkbox field" src="../img/field_checkbox.png" /></p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this checkbox is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>value (bool)
+   </td>
+   <td>Preselect the checkbox when it first renders. This will be cast to bool internally.
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed next to the checkbox.
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+<p>
+[keyword only]
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="slider">Slider<a class="headerlink" href="#slider" title="Permanent link">&para;</a></h2>
+<p>Display a slider widget.</p>
+<p><img alt="Slider Field" src="../img/field_slider.png" /></p>
+<p>This supports int, float, date, time, and datetime types.</p>
+<p>This also allows you to render a range slider by passing a two-element tuple or list as the value.</p>
+<p>Note: Integer values exceeding +/- (1&lt;&lt;53) - 1 cannot be accurately stored or returned by the widget due to serialization constraints between the Python server and JavaScript client. You must handle such numbers as floats, leading to a loss in precision.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this slider is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>min_value (a supported type or None)
+   </td>
+   <td>The minimum permitted value. Defaults to 0 if the value is an int, 0.0 if a float, value - timedelta(days=14) if a date/datetime, time.min if a time.
+   </td>
+  </tr>
+  <tr>
+   <td>max_value (a supported type or None)
+   </td>
+   <td>The maximum permitted value. Defaults to 100 if the value is an int, 1.0 if a float, value + timedelta(days=14) if a date/datetime, time.max if a time.
+   </td>
+  </tr>
+  <tr>
+   <td>value (a supported type or a tuple/list of supported types or None)
+   </td>
+   <td>The value of the slider when it first renders. If a tuple/list of two values is passed here, then a range slider with those lower and upper bounds is rendered. For example, if set to (1, 10) the slider will have a selectable range between 1 and 10. Defaults to min_value.
+   </td>
+  </tr>
+  <tr>
+   <td>step (int, float, timedelta, or None)
+   </td>
+   <td>The stepping interval. Defaults to 1 if the value is an int, 0.01 if a float, timedelta(days=1) if a date/datetime, timedelta(minutes=15) if a time (or if max_value - min_value &lt; 1 day)
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed next to the slider.
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it above the widget (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="number_input">number_input<a class="headerlink" href="#number_input" title="Permanent link">&para;</a></h2>
+<p>Display a numeric input widget.</p>
+<p><img alt="Number Input" src="../img/field_number_input.png" title="image_tooltip" /></p>
+<p>Note: Integer values exceeding +/- (1&lt;&lt;53) - 1 cannot be accurately stored or returned by the widget due to serialization contstraints between the Python server and JavaScript client. You must handle such numbers as floats, leading to a loss in precision.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this input is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>min_value (int, float, or None)
+   </td>
+   <td>The minimum permitted value. If None, there will be no minimum.
+   </td>
+  </tr>
+  <tr>
+   <td>max_value (int, float, or None)
+   </td>
+   <td>The maximum permitted value. If None, there will be no maximum.
+   </td>
+  </tr>
+  <tr>
+   <td>value (int, float, "min" or None)
+   </td>
+   <td>The value of this widget when it first renders. If None, will initialize empty and return None until the user provides input. If "min" (default), will initialize with min_value, or 0.0 if min_value is None.
+   </td>
+  </tr>
+  <tr>
+   <td>step (int, float, or None)
+   </td>
+   <td>The stepping interval. Defaults to 1 if the value is an int, 0.01 otherwise. If the value is not specified, the format parameter will be used.
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>An optional tooltip that gets displayed next to the input.
+   </td>
+  </tr>
+  <tr>
+   <td>placeholder (str or None)
+<p>
+[keyword only]
+   </td>
+   <td>An optional string displayed when the number input is empty. If None, no placeholder is displayed.
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+<p>
+[keyword only]
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it above the widget (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="image">Image<a class="headerlink" href="#image" title="Permanent link">&para;</a></h2>
+<p>Display an image with optional caption. </p>
+<p><img alt="Image Field" src="../img/field_image.png" /></p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>image (numpy.ndarray, [numpy.ndarray], BytesIO, str, or [str])
+   </td>
+   <td>Monochrome image of shape (w,h) or (w,h,1) OR a color image of shape (w,h,3) OR an RGBA image of shape (w,h,4) OR a URL to fetch the image from OR a path of a local image file OR an SVG XML string like &lt;svg xmlns=...&lt;/svg> OR a list of one of the above, to display multiple images.
+   </td>
+  </tr>
+  <tr>
+   <td>caption (str or list of str)
+   </td>
+   <td>Image caption. If displaying multiple images, caption should be a list of captions (one for each image).
+   </td>
+  </tr>
+</table>
+
+<h2 id="file_uploader">file_uploader<a class="headerlink" href="#file_uploader" title="Permanent link">&para;</a></h2>
+<p>Display a file uploader widget.</p>
+<p><img alt="File Uploader" src="../img/field_file_uploader.png" /></p>
+<p>By default, uploaded files are limited to 200MB. You can configure this using the server.maxUploadSize config option. For more info on how to set config options, see <a href="https://docs.streamlit.io/develop/api-reference/configuration/config.toml">https://docs.streamlit.io/develop/api-reference/configuration/config.toml</a> </p>
+<p><strong>Parameters:</strong></p>
+<table>
+  <tr>
+   <td>label (str)
+   </td>
+   <td>A short label explaining to the user what this file uploader is for. The label can optionally contain GitHub-flavored Markdown of the following types: Bold, Italics, Strikethroughs, Inline Code, and Links.
+<p>
+Unsupported Markdown elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g., "1\. Not an ordered list".
+<p>
+See the body parameter of st.markdown for additional, supported Markdown directives.
+<p>
+For accessibility reasons, you should never set an empty label (label="") but hide it with label_visibility if needed. In the future, we may disallow empty labels by raising an exception.
+   </td>
+  </tr>
+  <tr>
+   <td>type (str or list of str or None)
+   </td>
+   <td>Array of allowed extensions. ['png', 'jpg'] The default is None, which means all extensions are allowed.
+   </td>
+  </tr>
+  <tr>
+   <td>help (str)
+   </td>
+   <td>A tooltip that gets displayed next to the file uploader.
+   </td>
+  </tr>
+  <tr>
+   <td>label_visibility ("visible", "hidden", or "collapsed")
+<p>
+[keyword only]
+   </td>
+   <td>The visibility of the label. If "hidden", the label doesn't show but there is still empty space for it above the widget (equivalent to label=""). If "collapsed", both the label and the space are removed. Default is "visible".
+   </td>
+  </tr>
+</table>
+
+<h2 id="conditional-fields">Conditional Fields<a class="headerlink" href="#conditional-fields" title="Permanent link">&para;</a></h2>
+<p>Fields can be shown or hidden based on conditional logic.</p>
+<p>Let's look at an example. Let's say we want to ask our user to choose their favorite character from a book, and <em>then</em> ask them a question about that character. We only want to show the second question after they've answered the first. </p>
+<p>This is our configuration: </p>
+<pre><code>  PHASES = {
+      "phase1": {
+          "name": "Tell me about a character in Canterbury Tales",
+          "fields": {
+                  "character": {
+                     "type": "radio",
+                     "label": "Choose your favorite character",
+                     "options": ['The Knight', 'The Monk', 'The Pardoner']
+              },
+                 "represent": {
+                     "type": "text_area",
+                     "label": "What does this character represent in the book?",
+                     "showIf": {"character": {"$ne": ""}}
+              }
+          },
+          "show_prompt": True,
+          "user_prompt": "My favorite character from Canterbury Tales is {character} and this is what they represent in the book: {represent}. Provide feedback on my analysis. "
+      },
+  }
+</code></pre>
+<p>And this is the rendered app before the user has met the conditional (answered the first question): </p>
+<p><img alt="Single Question" src="../img/conditional_unanswered.png" /></p>
+<p>And here is the app again after the user has met the conditional (they answered the first question), so the second question appears.</p>
+<p><img alt="Two Questions" src="../img/conditional_answered.png" /></p>
+<h3 id="boolean-conditionals">Boolean Conditionals<a class="headerlink" href="#boolean-conditionals" title="Permanent link">&para;</a></h3>
+<p>Boolean values can be conditional based on whether they are True or False. If the condition is met, then the prompt snippet is included.  </p>
+<p>Boolean conditionals can be: </p>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+<p><strong>Code Sample</strong></p>
+<pre><code>          "fields": {
+                  "read": {
+                     "type": "checkbox",
+                     "label": "Have you read the book?",
+              },
+                 "represent": {
+                     "type": "text_area",
+                     "label": "Provide a two paragraph summary of the book.",
+                     "showIf": {"read": True}
+              }
+</code></pre>
+<h3 id="numeric-conditionals">Numeric Conditionals<a class="headerlink" href="#numeric-conditionals" title="Permanent link">&para;</a></h3>
+<p>Numeric values can be conditional based on numbers that you choose. If the condition is met, then the prompt snippet is included.  </p>
+<p>Numeric conditionals can be: </p>
+<ul>
+<li>equal to </li>
+<li>greater than (<code>$gt</code>)</li>
+<li>less than (<code>$lt</code>)</li>
+<li>greater than or equal to (<code>$gte</code>)</li>
+<li>less than or equal to (<code>$lte</code>)</li>
+<li>not equal to (<code>$ne</code>)</li>
+</ul>
+<p><strong>Code Sample</strong></p>
+<pre><code>          "fields": {
+                  "age": {
+                     "type": "number_input",
+                     "label": "What is your age?",
+              },
+                 "license": {
+                     "type": "checkbox",
+                     "label": "Do you have a valid driver's license?",
+                     "showIf": {"age": {"$gte": 16}}
+              }
+</code></pre>
+<h3 id="string-conditionals">String Conditionals<a class="headerlink" href="#string-conditionals" title="Permanent link">&para;</a></h3>
+<p>String values can be conditional based on if they match a string that you choose. If the condition is met, then the prompt snippet is included.  </p>
+<p>String conditionals can be: </p>
+<ul>
+<li>equal to </li>
+<li>not equal to (<code>$ne</code>)</li>
+</ul>
+<p><strong>Code Sample</strong></p>
+<pre><code>          "fields": {
+                  "education": {
+                     "type": "radio",
+                     "label": "What is your education level?",
+                     "options": ['High School or Less','Some College Education']
+              },
+                 "higher_education": {
+                     "type": "radio",
+                     "label": "What is your highest degree achieved?",
+                     "options": ['None','Associates','Bachelor','Masters or PhD'],
+                     "showIf": {"education": "Some College Education"}
+              }
+</code></pre>
+<h3 id="list-conditionals">List Conditionals<a class="headerlink" href="#list-conditionals" title="Permanent link">&para;</a></h3>
+<p>Lists can be conditional based on whether they contain or do not contain certain values. If the condition is met, then the prompt snippet is included. </p>
+<ul>
+<li>in (<code>$in</code>)</li>
+<li>not in (<code>$nin</code>)</li>
+</ul>
+<p><strong>Code Sample</strong></p>
+<blockquote>
+<p><strong>Note:</strong> AI MicroApps don't support any fields that return lists at the moment. Therefore, there are no code samples and this is a placeholder for when we do support list input fields. </p>
+</blockquote>
+<h3 id="logic-andor-conditionals">Logic (and/or) Conditionals<a class="headerlink" href="#logic-andor-conditionals" title="Permanent link">&para;</a></h3>
+<p>Conditionals can be combined with and, or, and not</p>
+<ul>
+<li>and (<code>$and</code>)</li>
+<li>or (<code>$or</code>)</li>
+</ul>
+<p><strong>Code Sample</strong></p>
+<pre><code>          "fields": {
+              "age": {
+                 "type": "number_input",
+                 "label": "What is your age?",
+              },
+              "license": {
+                 "type": "checkbox",
+                 "label": "Do you have a valid driver's license?",
+                 "showIf": {"age": {"$gte": 16}}
+              },
+              "driver": {
+                 "type": "radio",
+                 "label": "Can you get a parent or guardian to drive you when you need it?",
+                 "options": ['yes','no'],
+                 "showIf": {
+                    "$or": [
+                       {"age": {"$lt": 16}},
+                       {"license": False}
+                    ]
+                 }
+              }
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.instant"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

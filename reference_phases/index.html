@@ -1,0 +1,1097 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/jswope00/AI-MicroApps/reference_phases/">
+      
+      
+        <link rel="prev" href="../concept_phases_fields_runs/">
+      
+      
+        <link rel="next" href="../reference_fields/">
+      
+      
+      <link rel="icon" href="../img/logo_transparent_bg_sq.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Phases - AI MicroApps Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#phases" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI MicroApps Docs" class="md-header__button md-logo" aria-label="AI MicroApps Docs" data-md-component="logo">
+      
+  <img src="../img/logo_green_bg_sq.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI MicroApps Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Phases
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jswope00/AI-MicroApps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jswope00/AI-MicroApps
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI MicroApps Docs" class="md-nav__button md-logo" aria-label="AI MicroApps Docs" data-md-component="logo">
+      
+  <img src="../img/logo_green_bg_sq.png" alt="logo">
+
+    </a>
+    AI MicroApps Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jswope00/AI-MicroApps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jswope00/AI-MicroApps
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Building
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Building
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build_online/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build from Github
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build_local/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build from Local
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept_phases_fields_runs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MicroApps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Phases
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Phases
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-feedback-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Feedback (Default)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-submission" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Submission
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skippable-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skippable Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scored-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scored Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hard-coded-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hard-Coded Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-with-revisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase with Revisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-with-editable-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase with Editable Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-combining-several-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase Combining Several Rules
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-feedback-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Feedback (Default)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-submission" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Submission
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skippable-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skippable Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scored-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scored Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hard-coded-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hard-Coded Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-with-revisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase with Revisions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-with-editable-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase with Editable Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-combining-several-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase Combining Several Rules
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="phases">Phases<a class="headerlink" href="#phases" title="Permanent link">&para;</a></h1>
+<p>These are the types of phases supported by MicroApps.</p>
+<div class="toc">
+<ul>
+<li><a href="#phases">Phases</a><ul>
+<li><a href="#basic-feedback-default">Basic Feedback (Default)</a></li>
+<li><a href="#no-submission">No Submission</a></li>
+<li><a href="#skippable-phase">Skippable Phase</a></li>
+<li><a href="#scored-phase">Scored Phase</a></li>
+<li><a href="#hard-coded-phase">Hard-Coded Phase</a></li>
+<li><a href="#phase-with-revisions">Phase with Revisions</a></li>
+<li><a href="#phase-with-editable-prompt">Phase with Editable Prompt</a></li>
+<li><a href="#phase-combining-several-rules">Phase Combining Several Rules</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="basic-feedback-default">Basic Feedback (Default)<a class="headerlink" href="#basic-feedback-default" title="Permanent link">&para;</a></h2>
+<p>The most basic phase asks a question, receives a response from the user, and sends that response in a prompt to the AI for feedback.</p>
+<p><img alt="Phase basic feedback" src="../img/phase_basic.png" /></p>
+<p><strong>Parameters</strong></p>
+<p>n/a</p>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase2": {
+    "name": "Basic Feedback",
+    "fields": {
+        "name": {
+            "type": "text_input",
+            "label": """What is your name?""",
+            "value": "Abe"
+        }
+    },
+    "user_prompt": "My name is {name}. Hello!",
+},
+</code></pre>
+<h2 id="no-submission">No Submission<a class="headerlink" href="#no-submission" title="Permanent link">&para;</a></h2>
+<p>A phase can be purely informational and have no submission. It simply displays the fields and moves onto the next phase.</p>
+<p><img alt="Phase no submission" src="../img/phase_no_submission.png" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no_submission</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase1": {
+    "name": "No Submission",
+    "fields": {
+        "markdown": {
+            "type": "markdown",
+            "body": """A phase can be purely informational and have no submission. It simply displays the fields and moves onto the next phase.""",
+            "unsafe_allow_html": True
+        }
+    },
+    "no_submission": True
+},
+</code></pre>
+<h2 id="skippable-phase">Skippable Phase<a class="headerlink" href="#skippable-phase" title="Permanent link">&para;</a></h2>
+<p>Phases can be skippable. Since an AI can make mistakes and get confused, it is recommended that phases are skippable whenever possible.</p>
+<p><img alt="Phase" src="../img/phase_skippable.png" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>allow_skip</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase3": {
+    "name": "Skippable Phase",
+    "fields": {
+        "skip_me": {
+            "type": "text_area",
+            "label": "Write a 2,000 word analysis on The Epistemological Implications of Quantum Entanglement on Post-Structuralist Interpretations of Derrida’s Deconstructionism",
+        }
+    },
+    "phase_instructions": "Analyze the user's essay on The Epistemological Implications of Quantum Entanglement on Post-Structuralist Interpretations of Derrida’s Deconstructionism",
+    "user_prompt": "{skip_me}",
+    "allow_skip": True,
+},
+</code></pre>
+<h2 id="scored-phase">Scored Phase<a class="headerlink" href="#scored-phase" title="Permanent link">&para;</a></h2>
+<p>Phases can be scored according to a rubric. In general, AI provides more accurate scoring when instructions are specific and the criteria are measurable.</p>
+<p><img alt="Phase" src="../img/phase_scored.png" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scored_phase</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>rubric</td>
+<td>string</td>
+</tr>
+<tr>
+<td>minimum_score</td>
+<td>integer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase4": {
+    "name": "Scored Phase",
+    "fields": {
+        "animal": {
+            "type": "text_input",
+            "label": "Provide the name of an animal. Any animal is fine, but it must be an animal.",
+            "value": "Monkey"
+        }
+    },
+    "phase_instructions": "The user will provide the name of an animal. Encourage them if they input a valid animal. Explain that they are incorrect if they do not.",
+    "user_prompt": "{animal}",
+    "allow_skip": True,
+    "scored_phase": True,
+    "rubric": """
+            1. Animal Name
+                1 point - The user provides a valid animal name.
+                0 points - The user provides input that does not include a valid animal name. 
+        """,
+    "minimum_score": 1
+},
+</code></pre>
+<p><strong>Rubrics</strong></p>
+<p>Rubrics are interpreted by AI, so they can typically be human readable. We have found rubrics with one or more dimensions where the score is clearly stated and the metrics are measureable to work well. Here is a sample rubric format:</p>
+<pre><code>  Dimension 1
+     3 points - Your specific criteria for maximum points in this dimension
+     2 points - Your criteria for 2 points in this dimension
+     0 points - Your criteria for no points in this dimension
+  Dimension 2
+     5 points - Your specific criteria for maximum points in this dimension
+     3 points - Your criteria for 3 points in this dimension
+     1 points - Your criteria for 1 point in this dimension
+</code></pre>
+<h2 id="hard-coded-phase">Hard-Coded Phase<a class="headerlink" href="#hard-coded-phase" title="Permanent link">&para;</a></h2>
+<p>You can provide hard-coded responses. For example, if you are just collecting some input and you want to provide static feedback for that input.</p>
+<p><img alt="Phase" src="../img/phase_hard_coded.png" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ai_response</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>custom_response</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> You <em>can</em> use user inputs in your hard-coded responses, by surrounding field names in the typical curly brackets <code>{}</code></p>
+</blockquote>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase5": {
+    "name": "Hard-Coded Phase",
+    "fields": {
+        "name2": {
+            "type": "text_input",
+            "label": "What is another name?",
+            "key": "name2",
+            "value": "Abe"
+        }
+    },
+    "allow_skip": True,
+    "ai_response": False,
+    "custom_response": "Hi {name2}! This is a hard-coded response, it is not being generated by AI."
+},
+</code></pre>
+<h2 id="phase-with-revisions">Phase with Revisions<a class="headerlink" href="#phase-with-revisions" title="Permanent link">&para;</a></h2>
+<p>Any phase can have the ability to allow revisions, and a limit to the number of revisions available. This is useful if the AI is generating something that the user might want to tweak.</p>
+<p><img alt="Phase" src="../img/phase_with_revisions.png" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>allow_revisions</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>max_revisions</td>
+<td>integer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase6": {
+    "name": "Phase with Revisions",
+    "fields": {
+        "topic": {
+            "type": "text_input",
+            "label": "Give me a topic to generate a multiple choice question for.",
+            "value": "DisneyLand"
+        }
+    },
+    "allow_skip": True,
+    "ai_response": True,
+    "user_prompt": "Please write me a single multiple choice question with three distractors and one correct answer about the following topic: {topic}",
+    "allow_revisions": True,
+    "max_revisions": 2,
+},
+</code></pre>
+<h2 id="phase-with-editable-prompt">Phase with Editable Prompt<a class="headerlink" href="#phase-with-editable-prompt" title="Permanent link">&para;</a></h2>
+<p>Any phase can have the ability to view and edit the final prompt. This can be useful when you want the user to have fine-grained control over what is being sent to the AI.</p>
+<p><img alt="Phase" src="../img/phase_with_editable_prompt.png" /></p>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show_prompt</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>read_only_prompt</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase7": {
+    "name": "Phase with editable prompt",
+    "fields": {
+        "domicile": {
+            "type": "radio",
+            "label": "Choose one:",
+            "options": ['Shoe', 'Fishing Boat', 'Water Park'],
+        }
+    },
+    "allow_skip": True,
+    "ai_response": True,
+    "user_prompt": "Write a whimsical haiku about {name} who likes {animal}(s) and lives in a {domicile}",
+    "show_prompt": True,
+    "read_only_prompt": False
+},
+</code></pre>
+<h2 id="phase-combining-several-rules">Phase Combining Several Rules<a class="headerlink" href="#phase-combining-several-rules" title="Permanent link">&para;</a></h2>
+<p>Most options can be combined. This is a phase that is skippable, scored, allows revisions, and shows an editable prompt.</p>
+<p><img alt="Phase" src="../img/phase_combining_rules.png" /></p>
+<p><strong>Code Sample</strong></p>
+<pre><code>"phase8": {
+    "name": "Combining Rules",
+    "fields": {
+        "haiku": {
+            "type": "text_area",
+            "height": 200,
+            "label": "Write a Haiku about The Industrial Revolution.",
+            "value": """Smoke stacks pierce the sky,
+  Iron and steam reshape life—
+  Machines hum, men sigh.""",
+              }
+          },
+          "allow_skip": True,
+          "ai_response": True,
+          "phase_instructions": "The user will write a Haiku about the industrial revolution. You should ensure it is a traditional Haiku and it is about the topic of the industrial revolution.",
+          "user_prompt": "Here is my Haiku about the industrial revolution: \n\n {haiku}",
+          "scored_phase": True,
+          "rubric": """
+          1. Haiku:
+          2 points - The user has entered a true Haiku poem with traditional Haiku Structure.
+          1 point - The user has entered a poem of some sort.
+          0 points - The user has not entered a poem of any kind.
+          2. Topic
+          2 points - The user has mentioned the Industrial Revolution. 
+          0 points - The user has NOT mentioned the Industrial Revolution. 
+          """,
+          "minimum_score": 2,
+          "show_prompt": True,
+          "read_only_prompt": False,
+          "allow_revisions": True,
+          "max_revisions": 2,
+      }
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.instant"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

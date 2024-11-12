@@ -1,0 +1,882 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/jswope00/AI-MicroApps/build_local/">
+      
+      
+        <link rel="prev" href="../build_online/">
+      
+      
+        <link rel="next" href="../deploy/">
+      
+      
+      <link rel="icon" href="../img/logo_transparent_bg_sq.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Build from Local - AI MicroApps Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#building-apps-from-your-local-computer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI MicroApps Docs" class="md-header__button md-logo" aria-label="AI MicroApps Docs" data-md-component="logo">
+      
+  <img src="../img/logo_green_bg_sq.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI MicroApps Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Build from Local
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jswope00/AI-MicroApps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jswope00/AI-MicroApps
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI MicroApps Docs" class="md-nav__button md-logo" aria-label="AI MicroApps Docs" data-md-component="logo">
+      
+  <img src="../img/logo_green_bg_sq.png" alt="logo">
+
+    </a>
+    AI MicroApps Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jswope00/AI-MicroApps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jswope00/AI-MicroApps
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Building
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Building
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build_online/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build from Github
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Build from Local
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Build from Local
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Requisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository-and-configure-your-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone the Repository and Configure your Application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-your-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Your Apps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-or-build-an-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customize or Build an App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commit your Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-to-the-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy to the Web
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept_phases_fields_runs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MicroApps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_phases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference_prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Requisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository-and-configure-your-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone the Repository and Configure your Application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-your-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Your Apps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-or-build-an-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customize or Build an App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commit your Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-to-the-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy to the Web
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="building-apps-from-your-local-computer">Building Apps from your Local Computer<a class="headerlink" href="#building-apps-from-your-local-computer" title="Permanent link">&para;</a></h1>
+<p>A local deployment allows you to use your own text or code editor and test your apps locally before pushing them to the web. If you aren't comfortable using a terminal window and some basic git and python commands, then you can continue <a href="../build_online/">Building Apps using the Github Editor</a>.</p>
+<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>You should have a forked version of the <a href="https://github.com/jswope00/AI-MicroApp-Template" alt="Build AI Microapp" target="_blank">MicroApp template repository</a>. Follow the instructions in the <a href="../quickstart/">Quickstart</a>. </p>
+</li>
+<li>
+<p>You need to have Git, Python and Pip installed on your machine, and a basic understanding of how to use them. </p>
+</li>
+</ol>
+<h2 id="clone-the-repository-and-configure-your-application">Clone the Repository and Configure your Application<a class="headerlink" href="#clone-the-repository-and-configure-your-application" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>In your terminal window, navigate to a directory where you want to keep your MicroApps and clone your forked repository:</p>
+<pre><code>git clone https://github.com/[Github User Name]/AI-MicroApps.git
+</code></pre>
+</li>
+<li>
+<p>Navigate into the newly created directory. </p>
+<pre><code>cd AI-MicroApps
+</code></pre>
+</li>
+<li>
+<p>Create a virtual environment</p>
+<pre><code>python3 -m venv venv
+</code></pre>
+</li>
+<li>
+<p>Activate your virtual environment.</p>
+<pre><code>source venv/bin/activate
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> You should activate your virtual environment any time you are running or working in your AI-MicroApps directory.</p>
+</blockquote>
+</li>
+<li>
+<p>With your virtual environment activated, install the requirements. </p>
+<pre><code>pip3 install -r requirements.txt
+</code></pre>
+</li>
+<li>
+<p>Create a <code>.env</code> file in the root directory and paste the following:</p>
+<pre><code>OPENAI_API_KEY="[My OpenAI Key]"
+GOOGLE_API_KEY="[My Google Gemini Key]"
+CLAUDE_API_KEY="[My Claude Key]"
+PERPLEXITY_API_KEY="[My Perplexity Key]"
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> You can leave placeholders for any keys you don't have or don't want to use. You should at least add the OpenAI key, since the template defaults to OpenAI. </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="run-your-apps">Run Your Apps<a class="headerlink" href="#run-your-apps" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>You can run either a single app or the App Directory to see all Published Apps. </p>
+<p>To run a <strong>single app</strong>:</p>
+<pre><code>streamlit run [app config file]
+</code></pre>
+<p>e.g. <code>streamlit run app_hello_world.py</code></p>
+<p>To run the <strong>App Directory</strong> and view all files: </p>
+<pre><code>streamlit run apps_directory.py
+</code></pre>
+</li>
+<li>
+<p>An app window should launch at <code>localhost:8501</code></p>
+</li>
+</ol>
+<h2 id="customize-or-build-an-app">Customize or Build an App<a class="headerlink" href="#customize-or-build-an-app" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>It is generally easier to modify an existing app configuration rather than start from scratch. You can use the <code>app_hello_world.py</code> app as our simplest example. If you want to modify that app to write a sonnet about you and your favorite animal (the example from <a href="../quickstart/">Quickstart</a>), you can replace all the content in that file with the following: </p>
+<pre><code>PHASES = {
+    "phase1": {
+        "name": "What is your name?",
+        "fields": {
+                "name": {
+                "type": "text_input",
+                "label": "What is your first name?",
+            },
+            "animal": {
+                "type": "text_input",
+                "label": "What is one of your favorite animals?"
+            }
+        },
+        "user_prompt": "My name is {name} and I like this animal: {animal}. Write a sonnet about me and my favorite animal.",
+    },
+}
+
+from core_logic.main import main
+if __name__ == "__main__":
+    main(config=globals())
+</code></pre>
+</li>
+<li>
+<p>To get a better understanding of the configuration options you have when building apps, move on to the reference documentation. </p>
+<ul>
+<li><a href="../concept_phases_fields_runs/">Phases, Fields and Runs</a></li>
+<li><a href="../reference_phases/">Phases</a></li>
+<li><a href="../reference_fields/">Fields</a></li>
+<li><a href="../reference_prompts/">Prompts</a></li>
+</ul>
+</li>
+<li>
+<p>Most changes are reflected once you save your app configuration file. Occasionally, changes might require that you restart the Streamlit server. </p>
+<p>To stop your streamlit server, navigate to terminal where your app is running and type <code>Ctrl + C</code></p>
+<p>To start your streamlit server, the command is either <code>streamlit run [app config file]</code> for a single app or <code>streamlit run apps_directory.py</code> for the Apps Directory</p>
+</li>
+</ol>
+<h2 id="commit-your-changes">Commit your Changes<a class="headerlink" href="#commit-your-changes" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>When you are ready to deploy your changes to the web, you must commit them to the Git repository first. The commands might look like this: </p>
+<p><code>git add .</code> To add all your files to a git commit.</p>
+<p><code>git commit -m "[My Commit Message]"</code> to add a descriptive message about what you are committing. </p>
+<p><code>git push origin main</code> to push your changes to your remote repository. </p>
+<p>Use <a href="https://docs.github.com/en" alt="Github Docs" target="_blank">Github's official documentation</a> or an AI service like ChatGPT for any questions about how to commit your changes to your remote repository. </p>
+</li>
+</ol>
+<h2 id="deploy-to-the-web">Deploy to the Web<a class="headerlink" href="#deploy-to-the-web" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>There are two ways to deploy to the web via Streamlit:</p>
+<ul>
+<li>
+<p><a href="../deploy/#deploy-a-single-app">Deploy a Single App</a> - Deploy a single app at a publicly accessible website. </p>
+</li>
+<li>
+<p><a href="../deploy/#deploy-an-apps-directory">Deploy your App Dashboard</a> - Deploy a gallery of all your published apps. </p>
+</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.instant"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
